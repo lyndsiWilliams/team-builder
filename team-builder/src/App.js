@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Members from './components/Members';
-import Form from './components/Form';
+import MemberForm from './components/MemberForm';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       id: 1,
       name: "Lyndsi",
       email: "kcatgirl@gmail.com",
-      role: "The mama"
+      role: "Damage"
     }
   ]);
 
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Form addNewMember={addNewMember} />
+      <MemberForm addNewMember={addNewMember} />
       <Members members={members} />
     </div>
   );
